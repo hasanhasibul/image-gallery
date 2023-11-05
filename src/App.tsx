@@ -71,7 +71,7 @@ const App = () => {
           draggedItemClassName="dragged"
         >
           {galleryData?.map((item: galleryType, index: number) => (
-            <SortableItem>
+            <SortableItem key={item?.id}>
               <div className={`item ${index === 0 && "col-span-2 row-span-2"}`}>
                 <GalleryCard
                   onChange={handleOnSelect}
