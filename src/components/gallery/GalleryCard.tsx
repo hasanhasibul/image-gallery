@@ -1,10 +1,5 @@
 import { FC } from "react";
-
-export type galleryType = {
-  img: string;
-  id: number;
-  isSelected: boolean;
-};
+import { galleryType } from "./interface";
 
 interface props {
   imageData: galleryType;
